@@ -1,4 +1,4 @@
-name: Clear Environments
+name: Clear Ephemeral Environments
 
 on:
   workflow_dispatch:

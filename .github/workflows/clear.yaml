@@ -1,4 +1,4 @@
-name: Clear Ephemeral Environments
+name: Clear Environment
 
 run-name: Clear
 
@@ -8,6 +8,12 @@ on:
       environment:
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        type: string
+        description: The environment to clear
 
 env:
   DB_NAME: realworld-app
